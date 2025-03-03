@@ -19,6 +19,9 @@ def main():
 
         for x in solution:
             print(x + "\n")
+        
+        minimum_movements = len(solution) - (1 if wanna_see_transition_boards[0] == "S" else 0)
+        print(f"Numero de movimientos para llegar al tablero final: {minimum_movements}")
 
         op = input("¿Desea hacer otra consulta (S/N)? ")
         if op[0] != 'S':
